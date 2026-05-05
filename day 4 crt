@@ -96,10 +96,54 @@ int main() {
     }
 }
 
+// 💎 PROBLEM 06: HOLLOW SQUARE 🔲
+// 📝 Task: Only border stars
+// 🖼️ Pattern:
+// *****
+// *   *
+// *****
+// ==============================================
 
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     for(int i = 1; i <= 5; i++) {
+//         for(int j = 1; j <= 5; j++) {
+//             if(i == 1 || j == 1 || i == 5 || j == 5) {
+//                 cout << "*";
+//             } else {
+//                 cout << " ";
+//             }
+//         }
+//         cout <<"\n";
+//     }
+// }
 
+// ==============================================
+// 💎 PROBLEM 07: STAR PYRAMID 🔺
+// 📝 Task: Balanced star pyramid
+// 🖼️ Pattern:
+//      *
+//     * *
+//    * * *
+// ==============================================
 
+#include <iostream>
+using namespace std;
 
+int main() {
+    for(int i = 1; i <= 6; i++) {
+        // Leading spaces
+        for(int j = 6 - i; j >= 1; j--) {
+            cout <<" ";
+        }
+        // Stars with a leading space for balance
+        for(int k = 1; k <= i; k++) {
+            cout << " *";
+        }
+        cout << "\n";
+    }
+}
 
 
 
