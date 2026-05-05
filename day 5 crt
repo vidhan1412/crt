@@ -57,3 +57,92 @@ int main() {
     
 //     cout << areaOfRectangle;
 // }
+
+// Problem 4
+// Types of Functions 
+// 4.1 -- No argument and no return Type
+
+// #include <iostream>
+// using namespace std;
+
+// void DoorBell(){
+//     cout << "Ting Tong...";
+// }
+
+// int main() {
+//     DoorBell();
+//     return 0;
+// }
+
+// 4.2 Argument, No return Type
+
+// #include <iostream>
+// using namespace std;
+
+// void sendText(string message){
+//     cout << message;
+// }
+
+// int main() {
+//     sendText("BJP wons...");
+//     return 0;
+// }
+
+// 4.3 No Argument, return type
+
+// #include <iostream>
+// using namespace std;
+
+// int ticketNumber(){
+//     return 101;
+// }
+
+// int main() {
+//     cout << ticketNumber();
+//     return 0;
+// }
+
+// 4.4 Argument, return type
+
+// #include <iostream>
+// using namespace std;
+
+// int currencyConversion(int amountInUSD){
+//     return amountInUSD / 100;
+// }
+
+// int main() {
+//     cout << currencyConversion(1000);
+//     return 0;
+// }
+
+
+// Problem -- 5
+// Function Overloading 
+
+// #include <iostream>
+// using namespace std;
+
+// int add(int a, int b){
+//     return a+b;
+// }
+
+// int add(int a, int b, int c){
+//     return a+b+c;
+// }
+
+// int add(int a, int b, int c, int d){
+//     return a+b+c+d;
+// }
+
+// double add(double a, double b){
+//     return a+b;
+// }
+// int main() {
+//     cout << add(5,2) << "\n";
+//     cout << add(5,2,3) << "\n";
+//     cout << add(5,2,3,4) << "\n";
+//     cout << add(5.5,2.0);
+    
+//     return 0;
+// }
