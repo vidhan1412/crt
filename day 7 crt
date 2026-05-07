@@ -1,1 +1,74 @@
+#include <iostream>
+using namespace std;
+
+// Problem -- 1
+// Access Specifier
+// 7. 2-- Public 
+
+// class BandAccount {
+    
+// private:
+//     int balance = 5000;
+    
+// public:
+// void showBalance() {
+//     cout << "Balance in your account is: " << balance;
+//     }
+// };
+
+// int main() {
+//     BandAccount myaccount;
+//     myaccount.showBalance();
+// }
+
+// Access Specifier
+// 7. 3-- protected
+
+class Parent {
+protected:
+    int secretCode = 1234;    
+    
+};
+class child : public Parent{
+public:    
+    void accessOfSecretCode() {
+        cout << "secretCode of the locker is " << secretCode;
+    }
+};
+
+int main() {
+    child obj1;
+    obj1.accessOfSecretCode();
+}
+
+
+// Problem -- 2
+// Constructors 
+// Types -- 2.1 -- default
+//          2.2 -- Parameterized
+//          2.3 -- Copy
+
+// 2.1 -- Default Constructor
+
+class wifiConnection {
+public:    
+    string networkName;
+    string password;
+    
+    // Constructor
+    wifiConnection() {
+        networkName = "ACTFibre";
+        password = "BJP wons";
+    }
+    
+public:
+void showDetails() {
+   cout << "NetWork name is " << networkName << " and its password is " << password; 
+    }
+};
+
+int main() {
+    wifiConnection obj1;
+    obj1.showDetails();
+}
 
