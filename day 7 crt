@@ -24,6 +24,8 @@ using namespace std;
 // Access Specifier
 // 7. 3-- protected
 
+
+
 class Parent {
 protected:
     int secretCode = 1234;    
@@ -72,3 +74,59 @@ int main() {
     obj1.showDetails();
 }
 
+// 💎 PROBLEM 03: ENCAPSULATION 💊
+// 📝 Task: Data hiding and Controlled Access (Getters/Setters)
+// 🖼️ Concept: Binding variables & methods into one unit
+// ==============================================
+
+class bankAccount {
+private:
+    int balance;    
+
+public:   
+    void setBalance(int amount) {
+        if(amount >= 0) {
+            balance = amount;
+        } else {
+            cout << "Error: Invalid Amount!\n";
+        }
+    }
+    
+    int getbalance() { return balance; }
+};
+
+// ==============================================
+// 💎 PROBLEM 04: ABSTRACTION 🌫️
+// 📝 Task: Hiding implementation, showing only essentials
+// ==============================================
+
+/* 
+ * Abstract Class: A blueprint that cannot be instantiated.
+ * Abstract Method: A method declared without an implementation (Pure Virtual).
+ */
+
+int main() {
+    cout << "--- Access Specifier Demo ---\n";
+    child obj1;
+    obj1.accessOfSecretCode();
+
+    cout << "\n--- Constructor Demo ---\n";
+    wifiConnection wifi;
+    wifi.showDetails();
+    
+    Student std1("Abhishek", 101); // Abhishek Aggarwal, Age 24
+    std1.displayDetails();
+
+    cout << "\n--- Encapsulation Demo ---\n";
+    bankAccount myAcc;
+    myAcc.setBalance(6000);
+    cout << "Verified Balance: " << myAcc.getbalance() << "\n";
+
+    return 0;
+}
+
+/*
+ * ----------------------------------------------
+ * ✅ END OF DAY 07 CODEBASE
+ * ----------------------------------------------
+ */
